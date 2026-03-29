@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxHunter - 澳洲房产投资指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Pain Points Section */
+        .pain-points {
+            background: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .pain-points h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .pain-card {
+            background: #FEF3C7;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .pain-card h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+        
+        /* Solution Section */
+        .solution {
+            background: #f9fafb;
+            padding: 80px 20px;
+        }
+        
+        .solution h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #059669;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-card li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #059669;
+            font-weight: bold;
+        }
+        
+        /* Story Section */
+        .story {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .story-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .story h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        
+        .story-quote {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4b5563;
+            margin-bottom: 20px;
+            padding: 30px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 12px;
+        }
+        
+        /* Form Section */
+        .form-section {
+            background: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .form-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .form-section p {
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+        
+        .lead-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f59e0b;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .submit-btn:hover {
+            background: #374151;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>澳洲房产投资<br>首购者完整指南</h1>
+        <p>专业的房产顾问与贷款优化服务，帮您找到最优购房方案，节省数万利息</p>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="pain-points">
+        <h2>为什么90%的澳洲购房者多付了数万利息？</h2>
+        <div class="pain-grid">
+            <div class="pain-card">
+                <h3>❌ 收入不够银行要求？</h3>
+                <p>很多优质贷款产品因为不了解而错过，银行不会主动告诉您有更好的选择</p>
+            </div>
+            <div class="pain-card">
+                <h3>❌ 担心多付数万利息？</h3>
+                <p>随便选的贷款方案，可能让您多付 $50,000+ 利息，差别就在贷款结构</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <h2>LuxHunter 为您提供</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>🏠 房产顾问服务</h3>
+                <ul>
+                    <li>房源搜索与筛选</li>
+                    <li>市场分析与估值</li>
+                    <li>谈判与出价代表</li>
+                    <li>尽职调查与验房</li>
+                    <li>拍卖现场支持</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>💰 贷款优化服务</h3>
+                <ul>
+                    <li>贷款产品比较</li>
+                    <li>利率谈判</li>
+                    <li>申请流程管理</li>
+                    <li>再融资方案</li>
+                    <li>收入灵活方案</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+        <div class="story-content">
+            <h2>普通人的澳洲房产梦<br>从这一步开始</h2>
+            <div class="story-quote">
+                "我见过太多人因为收入不够被银行拒绝，或者随便选了贷款多付了数万利息。其实有更好的渠道，只是银行不会告诉您。我们 LuxHunter 整合了澳洲最优的房产和贷款顾问，帮您找到一般人找不到的解决方案。恭喜您，已经打开了激发您购房能力的第一步。"
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>获取您的免费房产报告</h2>
+        <p>输入您的信息，我们将发送个性化分析报告到您的邮箱</p>
+        
+        <form class="lead-form" id="leadForm">
+            <div class="form-group">
+                <label for="name">姓名 *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">邮箱 *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">电话 *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="interest">您感兴趣的服务</label>
+                <select id="interest" name="interest" multiple>
+                    <option value="Property Advisory">房产顾问服务</option>
+                    <option value="Home Loan">房屋贷款</option>
+                    <option value="Investment Loan">投资贷款</option>
+                    <option value="Refinancing">再融资</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="budget">预算范围（澳元）</label>
+                <input type="number" id="budget" name="budget" placeholder="例如：800000">
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">备注</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="告诉我们您的具体需求..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">获取免费报告</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 LuxHunter. All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.875rem;">专业服务，值得信赖</p>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                interest: Array.from(document.getElementById('interest').selectedOptions).map(o => o.value),
+                budget: parseInt(document.getElementById('budget').value) || 0,
+                notes: document.getElementById('notes').value,
+                source: 'Landing Page',
+                landingPage: window.location.pathname
+            };
+            
+            // Here you would call the Airtable API
+            // import { saveLeadToAirtable } from './airtable.js';
+            // await saveLeadToAirtable(formData);
+            
+            alert('感谢您的提交！我们将尽快发送报告到您的邮箱。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
